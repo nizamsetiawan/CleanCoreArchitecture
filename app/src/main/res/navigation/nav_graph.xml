@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.app.dicodingeventsapp.presentation.ui.home.HomeFragment"
+        android:label="Home" />
+
+    <fragment
+        android:id="@+id/nav_upcoming"
+        android:name="com.example.app.dicodingeventsapp.presentation.ui.upcoming.UpcomingFragment"
+        android:label="Upcoming Events" />
+
+    <fragment
+        android:id="@+id/nav_finished"
+        android:name="com.example.app.dicodingeventsapp.presentation.ui.event.FinishedFragment"
+        android:label="Finished Events" />
+
+    <fragment
+        android:id="@+id/nav_bookmarks"
+        android:name="com.example.app.dicodingeventsapp.presentation.ui.bookmarks.BookmarksFragment"
+        android:label="Bookmarks" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.app.dicodingeventsapp.presentation.ui.setting.SettingFragment"
+        android:label="Settings" />
+
+</navigation>

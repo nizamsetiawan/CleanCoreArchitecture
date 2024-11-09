@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Dicoding Events App</string>
+    <string name="home_title">Home</string>
+    <string name="upcoming_events">Upcoming Events</string>
+    <string name="finished_events">Finished Events</string>
+    <string name="event_search_hint">Search for events...</string>
+    <string name="button_register">Register</string>
+    <string name="button_details">View Details</string>
+    <string name="loading">Loading...</string>
+    <string name="error_message">Error loading data. Please try again.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="finished_event">Finished Events</string>
+    <string name="dicoding_events">DICODING EVENTS</string>
+    <string name="upcoming_event">Upcoming Events</string>
+    <string name="event_name">Event Name</string>
+    <string name="event_image">Event Image</string>
+    <string name="bookmarks_event">Bookmarks Event</string>
+    <string name="is_empty">No favorites added</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="enable_or_disable_dark_mode_for_a_more_comfortable_user_experience">Toggle Dark Mode</string>
+</resources>

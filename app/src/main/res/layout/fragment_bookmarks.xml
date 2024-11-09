@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvDicodingEventsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dicoding_events"
+        style="@style/BoldHeadlineStyle"
+        android:textSize="@dimen/text_size_large"
+        android:paddingBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvFinishedTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bookmarks_event"
+        style="@style/BoldHeadlineStyle"
+        android:textSize="@dimen/text_size_small"
+        android:paddingBottom="16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvBookmarksEvents"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"/>
+
+    <include
+        android:id="@+id/empty_layout_favourite_events"
+        layout="@layout/layout_empty_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+</LinearLayout>

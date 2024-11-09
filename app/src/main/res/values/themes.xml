@@ -1,0 +1,95 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base theme for the application (Light Theme) -->
+    <style name="Base.Theme.DicodingEventsApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary colors -->
+        <item name="colorPrimary">@color/teal_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary colors -->
+        <item name="colorSecondary">@color/mint_light</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Background colors -->
+        <item name="android:windowBackground">@color/white</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/black</item> <!-- Ensure text is black on white background -->
+
+        <!-- Error colors -->
+        <item name="colorError">@color/design_default_color_error</item>
+        <item name="colorOnError">@color/white</item>
+
+        <!-- Status bar and Navigation bar -->
+        <item name="android:statusBarColor">@color/teal_dark</item>
+        <item name="android:navigationBarColor">@color/teal_dark</item>
+    </style>
+
+    <!-- Main theme -->
+    <style name="Theme.DicodingEventsApp" parent="Base.Theme.DicodingEventsApp" />
+
+    <!-- Button Styles -->
+    <style name="Button.Primary" parent="Base.Theme.DicodingEventsApp">
+        <item name="android:backgroundTint">@color/teal_dark</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/button_height_medium</item>
+        <item name="android:padding">@dimen/padding_medium</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="fontFamily">@font/poppins_semi_bold</item>
+    </style>
+
+    <style name="Button.Secondary" parent="Button.Primary">
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:textColor">@color/teal_dark</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="strokeColor">@color/teal_dark</item>
+    </style>
+
+    <!-- Headline Text Styles -->
+    <style name="BoldHeadlineStyle" parent="Base.Theme.DicodingEventsApp">
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:textColor">@color/teal_dark</item> <!-- Ensure visibility -->
+    </style>
+
+    <style name="LightHeadline" parent="BoldHeadlineStyle">
+        <item name="fontFamily">@font/poppins_light</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">@color/black</item> <!-- Ensure visibility -->
+    </style>
+
+    <style name="RegularHeadline" parent="BoldHeadlineStyle">
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="MediumHeadline" parent="BoldHeadlineStyle">
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/black</item> <!-- Ensure visibility -->
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <!-- Subheadline Text Styles -->
+    <style name="RegularSubHeadline" parent="Base.Theme.DicodingEventsApp">
+        <item name="android:textColor">@color/teal_dark</item>
+        <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="SemiBoldSubHeadline" parent="RegularSubHeadline">
+        <item name="android:textColor">@color/mint_light</item>
+        <item name="fontFamily">@font/manrope_semi_bold</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <!-- Toolbar Text Appearance -->
+    <style name="ToolbarTextAppearance" parent="Base.Theme.DicodingEventsApp">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_xlarge</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:textColor">@color/black</item> <!-- Ensure visibility -->
+    </style>
+</resources>

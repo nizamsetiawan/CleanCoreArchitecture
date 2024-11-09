@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.ui.event.EventDetailActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        style="@style/BoldHeadlineStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:titleTextColor="@color/white" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/eventImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/eventNameTitle"
+                style="@style/BoldHeadlineStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:text="Event Name"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/eventName"
+                style="@style/LightHeadline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/eventOwnerTitle"
+                style="@style/BoldHeadlineStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:text="Event Owner"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/eventOwner"
+                style="@style/LightHeadline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp" />
+
+            <TextView
+                android:id="@+id/eventTimeTitle"
+                style="@style/BoldHeadlineStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:text="Event Time"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/eventTime"
+                style="@style/LightHeadline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp" />
+
+            <TextView
+                android:id="@+id/eventQuotaTitle"
+                style="@style/BoldHeadlineStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:text="Event Quota"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/eventQuota"
+                style="@style/LightHeadline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp" />
+
+            <TextView
+                android:id="@+id/eventDescriptionTitle"
+                style="@style/BoldHeadlineStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:text="Event Description"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/eventDescription"
+                style="@style/LightHeadline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/eventLink"
+                style="@style/Button.Primary"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Open Event Link" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabFavorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="24dp"
+        android:backgroundTint="@color/mint_light"
+        android:src="@drawable/ic_favorite_inactive"
+        app:tint="@color/red"
+         />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
